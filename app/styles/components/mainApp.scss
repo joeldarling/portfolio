@@ -5,15 +5,26 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: lighter;
+
 }
 
 .app-container {
   margin: 0 auto;
   width: 100%;
+  min-width: 300px;
   text-align: center;
 }
 .logo-name {
-  font-size: 3.0rem;
   text-align: center;
-  font-weight:200;
+  font-weight: 100;
+
+  @include phone {
+    font-size: 4.5rem;
+  }
+  @include tablet {
+    font-size: 3.5rem;
+  }
+  @include desktop {
+    font-size: 3.0rem;
+  }
 }

@@ -8,7 +8,7 @@ export default class MainApp extends Component {
       <div className="app-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <h1 className="logo-name">Joel Darling</h1>
-        <Avatar url='poop'/>
+        <Avatar url='image'/>
       </div>
     );
 	}
