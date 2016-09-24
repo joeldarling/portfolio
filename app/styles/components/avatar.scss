@@ -1,0 +1,18 @@
+.avatar {
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  @include phone {
+    background-color: red;
+    font-size: 2.5rem;
+  }
+  @include tablet {
+    background-color: blue;
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    background-color: green;
+    font-size: 1.3rem;
+
+  }
+}

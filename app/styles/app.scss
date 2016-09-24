@@ -3,6 +3,9 @@
 // foundation
 @import "base/foundation-settings";
 @import "foundation";
+@import "base/media";
 @include foundation-everything;
 
 // Components
+@import "components/mainApp";
+@import "components/avatar";
