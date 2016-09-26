@@ -5,7 +5,8 @@ export default class Bio extends Component {
 
 		return (
       <div>
-        <h5> Software Engineer. NYC. </h5>
+        <h4> <i className="fa fa-code"></i> Software Engineer </h4>
+				<h5> <i className="fa fa-map-marker"></i> NYC. </h5>
         <p> Fullstack Web Developer, and also <a href="http://joeldarling.com" target="_blank">musician</a></p>
       </div>
     );

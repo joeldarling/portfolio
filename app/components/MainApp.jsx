@@ -10,12 +10,14 @@ import Bio from 'Bio';
 export default class MainApp extends Component {
 	render() {
 		return (
-      <div className="app-container">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <h1 className="logo-name">Joel Darling</h1>
-        <Avatar url='image'/>
-				<Bio/>
-      </div>
+			<div>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	      <div className="app-container">
+	        <h1 className="logo-name">Joel Darling</h1>
+	        <Avatar/>
+					<Bio/>
+      	</div>
+			</div>
     );
 	}
 }

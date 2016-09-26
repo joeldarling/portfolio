@@ -11,7 +11,10 @@ import router from 'app/router/';
 $(document).foundation();
 
 // App css
+require("font-awesome-webpack");
 require('style!css!sass!applicationStyles')
+
+
 
 ReactDOM.render(
   <Provider store={store}>
