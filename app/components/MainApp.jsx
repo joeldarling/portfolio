@@ -1,6 +1,11 @@
 import React, {Component, PropTypes} from 'react';
 import * as Redux from 'react-redux';
+
+//components
+import Navigation from 'Navigation';
 import Avatar from 'Avatar';
+import Bio from 'Bio';
+
 
 export default class MainApp extends Component {
 	render() {
@@ -9,6 +14,7 @@ export default class MainApp extends Component {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <h1 className="logo-name">Joel Darling</h1>
         <Avatar url='image'/>
+				<Bio/>
       </div>
     );
 	}

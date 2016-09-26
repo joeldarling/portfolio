@@ -5,7 +5,8 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: lighter;
-
+  background-color: $light-grey;
+  margin-top: 5%;
 }
 
 .app-container {
@@ -19,10 +20,10 @@ body {
   font-weight: 100;
 
   @include phone {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
   @include tablet {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
   }
   @include desktop {
     font-size: 3.0rem;
