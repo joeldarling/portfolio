@@ -15,7 +15,7 @@
 
   img {
     border-radius: 50%;
-
+    opacity: 1;
 
     @include phone {
       width: 40%;
@@ -30,6 +30,11 @@
       height: 20%;
       max-width: 120px;
       max-height: 120px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      transition: opacity .25s ease-in-out;
     }
   }
 }
