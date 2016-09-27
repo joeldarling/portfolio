@@ -1,10 +1,15 @@
 .project-container {
+  margin-top: 80px;
+
+}
+.project-list-container {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
 
   margin: 0 auto;
   width: 50%;
+  transition: all 2s ease-in-out;
 }
 
 .project {
@@ -13,6 +18,7 @@
   border-radius: 20px;
   text-align: left;
   color: #585858;
+  margin-bottom: 20px;
 
   h3 {
     font-weight: 300;
@@ -28,7 +34,9 @@
 }
 
 .clickable-title {
-  font-weight: 300;
+  h5{
+    font-weight: 300;
+  }
 }
 .clickable-title:hover {
   cursor: pointer;

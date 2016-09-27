@@ -5,23 +5,7 @@ import {connect} from 'react-redux';
 import Avatar from 'Avatar';
 import Bio from 'Bio';
 import Projects from 'Projects';
-
-const projects = [
-  {
-    id: 1,
-    name: 'together',
-    url: 'together.com',
-    github: 'github.com',
-    desc: 'A suite of web and mobile apps for enhancing the live event experience'
-  },
-  {
-    id: 2,
-    name: 'together',
-    url: 'together.com',
-    github: 'github.com',
-    desc: 'A suite of web and mobile apps for enhancing the live event experience'
-  }
-];
+import getResume from 'Resume';
 
 export class MainAppContainer extends Component {
   constructor(props){
@@ -29,14 +13,14 @@ export class MainAppContainer extends Component {
   }
   render() {
     const {dispatch} = this.props;
-    console.log(this.props);
+
     return (
 			<div>
 	      <div className="app-container">
 	        <h1 className="logo-name">Joel Darling</h1>
 	        <Avatar/>
 					<Bio/>
-          <Projects projects={projects}/>
+          <Projects projects={getResume()}/>
       	</div>
 			</div>
     );

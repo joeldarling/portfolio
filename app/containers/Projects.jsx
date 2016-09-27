@@ -19,10 +19,19 @@ export class Projects extends Component {
       return projects.map( project => <Project key={project.id} {...project}/> )
     }
 
+    const renderIcon = () => {
+      if(!showProjects) return <i className="fa fa-plus"></i>
+      else return <i className="fa fa-minus"></i>
+    }
+
     return (
-      <div>
-        <h4 className="clickable-title" onClick={() => dispatch(toggleShowProject())}>Recent Projects</h4>
-  			<div className="project-container">
+      <div className="project-container">
+        <div className="clickable-title" >
+          <div onClick={() => dispatch(toggleShowProject())}>
+            <h5>{renderIcon()} Recent Projects</h5>
+          </div>
+        </div>
+  			<div className="project-list-container">
           {showProjects ? renderProjects() : null}
   			</div>
       </div>
