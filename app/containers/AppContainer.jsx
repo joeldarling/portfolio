@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import {connect} from 'react-redux';
 
 //components
 import Avatar from 'Avatar';
@@ -7,18 +8,28 @@ import Projects from 'Projects';
 
 const projects = [
   {
+    id: 1,
     name: 'together',
-    url: 'together.com'
+    url: 'together.com',
+    github: 'github.com',
+    desc: 'A suite of web and mobile apps for enhancing the live event experience'
   },
   {
-    name: 'jottr',
-    url: 'jottr.com'
+    id: 2,
+    name: 'together',
+    url: 'together.com',
+    github: 'github.com',
+    desc: 'A suite of web and mobile apps for enhancing the live event experience'
   }
 ];
 
-export default class MainAppContainer extends Component {
-
+export class MainAppContainer extends Component {
+  constructor(props){
+    super(props);
+  }
   render() {
+    const {dispatch} = this.props;
+    console.log(this.props);
     return (
 			<div>
 	      <div className="app-container">
@@ -31,3 +42,4 @@ export default class MainAppContainer extends Component {
     );
   }
 }
+export default connect((state) => state)(MainAppContainer);

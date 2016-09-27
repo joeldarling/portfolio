@@ -1,11 +1,11 @@
 import * as redux from 'redux';
 import thunk from 'redux-thunk';
 
-import {mainReducer} from 'reducers';
+import {showProjectReducer} from 'reducers';
 
 export const configure = () => {
   const reducer = redux.combineReducers({
-    main: mainReducer
+    showProjects: showProjectReducer
   });
 
   const store = redux.createStore(reducer, redux.compose(
