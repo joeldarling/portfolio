@@ -2,10 +2,13 @@ require('@risingstack/trace'); // trace should be on top
 
 const express = require('express');
 const path = require('path');
+const compression = require('compression');
 
 // Create our app
 var app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(compression());
 
 app.use(function (req, res, next){
 	if (req.headers['x-forwarded-proto'] === 'https') {
