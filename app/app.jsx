@@ -6,12 +6,9 @@ const store = require('configureStore').configure();
 const actions = require('actions');
 import router from 'app/router/';
 
-// Load foundation
-$(document).foundation();
-
 // App css
 require('font-awesome-webpack');
-require('style!css!sass!applicationStyles')
+require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
   <Provider store={store}>
